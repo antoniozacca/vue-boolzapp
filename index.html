@@ -26,7 +26,7 @@
         <div class="header-left">
           <div class="header-left-logo">
             <img src="img/avatar_1.jpg" alt="Utente" />
-            <span>Nome</span>
+            <span>Michele</span>
           </div>
           <div class="header-left-icons">
             <i class="fas fa-circle-notch"></i>
@@ -55,13 +55,13 @@
           />
         </div>
         <div class="contacts">
-          <div class="contact">
+          <div v-for="(contact, index) in contacts" :key="index" class="contact">
             <div class="contact-logo">
-              <img src="img/avatar_1.jpg" alt="Utente" />
+              <img :src="contact.avatar" alt="Utente" />
             </div>
             <div class="contact-info">
               <h3>
-                <span class="contact-name">Nome contatto</span>
+                <span class="contact-name">{{ contact.name }}</span>
                 <span class="time f-right"></span>
               </h3>
               <small></small>
@@ -101,5 +101,6 @@
       </div>
       <!-- /contenitore dx -->
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
