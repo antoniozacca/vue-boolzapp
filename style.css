@@ -368,3 +368,41 @@ body {
   font-size: 25px;
   color: #6B7376;
 }
+.card-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-7 {
+  height: 30%;
+
+  width: 60%;
+
+  background-color: #D4F9BBff;
+
+  border-radius: 20px;
+}
+.content-7 p {
+  padding: 20px;
+}
+.message span {
+  color: #C6DDBBff;
+}
+.card-right {
+  margin-top: 10px;
+}
+.content-8 {
+  height: 30%;
+  width: 60%;
+  background-color: #FFFFFFff;
+  border-radius: 20px;
+}
+.content-8 p {
+  padding: 20px;
+}
+.content-8 span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding-right: 10px;
+}
