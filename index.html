@@ -54,7 +54,7 @@
               <span class="contact-name">{{ contact.name }}</span>
               <span class="time f-right">{{formatDate(contact.messages[contact.messages.length - 1].date)}}</span>
             </h3>
-            <small>{{contact.lastMessage}}</small>
+            <small>{{contact.messages[contact.messages.length - 1].message}}</small>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
       <div class="right-messages-container">
         <div class="right-messages">
           <div v-for="(message, index) in currentContact.messages" :key="index" :class="{'card-left': message.status === 'received', 'card-right': message.status === 'sent'}">
-            <div class=ìcontent-7">
+            <div class="content-7">
               <p :class="{'bg-receved': message.status === 'received'}">{{ message.message }}</p>
               <span>{{ formatDate(message.date) }}</span>
             </div>
