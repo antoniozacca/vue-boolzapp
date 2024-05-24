@@ -197,6 +197,14 @@ createApp({
                 status: 'sent'
             })
             this.elementoDaAggiungere = " ";
+            setTimeout(()=>{
+
+                this.currentContact.messages.push({
+                    date: new Date().toLocaleString('it-IT'),
+                    message: 'ok',
+                    status: 'received'
+                })
+            }, 1000)
         }
     }
   }

@@ -78,7 +78,7 @@
       </div>
       <div class="right-messages-container">
         <div class="right-messages">
-          <div v-for="(message, index) in currentContact.messages" :key="index" :class="{'card-left': message.status === 'received', 'card-right': message.status === 'sent'}">
+          <div v-for="(message, index) in currentContact.messages" :key="index" :class="message.status === 'received' ? 'bg-received content-7 card-left' : 'bg-invio content-8 right'">
             <div class="content-7">
               <p :class="{'bg-receved': message.status === 'received'}">{{ message.message }}</p>
               <span>{{ formatDate(message.date) }}</span>

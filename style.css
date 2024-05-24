@@ -388,11 +388,11 @@ body {
 }
 .card-right {
   margin-top: 10px;
+  justify-content: flex-end;
 }
 .content-8 {
   height: 30%;
   width: 60%;
-  background-color: #FFFFFFff;
   border-radius: 20px;
 }
 .content-8 p {
@@ -406,4 +406,12 @@ body {
 }
 .bg-receved{
   background-color: #D4F9BBff;
+}
+.bg-invio{
+  background-color: white;
+}
+.message{
+  margin-top: 30px;
+   margin-left: 10px;
+   margin-right: 10px;
 }
