@@ -188,6 +188,16 @@ createApp({
     },
     formatDate(date) {
       return moment(date, 'DD/MM/YYYY HH:mm:ss').format('HH:mm');
+    },
+    addMessage(){
+        if (this.elementoDaAggiungere !== " ") {
+            this.currentContact.messages.push({
+                date: new Date().toLocaleString('it-IT'),
+                message: this.elementoDaAggiungere,
+                status: 'sent'
+            })
+            this.elementoDaAggiungere = " ";
+        }
     }
   }
 }).mount("#app");

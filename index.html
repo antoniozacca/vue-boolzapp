@@ -90,9 +90,9 @@
         <div class="right-footer-icon f-left">
           <i class="far fa-smile"></i>
         </div>
-        <input class="new-message-inputs" placeholder="Scrivi un messaggio" />
+        <input v-model="elementoDaAggiungere" class="new-message-inputs" placeholder="Scrivi un messaggio" />
         <div class="right-footer-icon f-right">
-          <i class="fa fa-microphone" aria-hidden="true"></i>
+          <i @click="addMessage" class="fa fa-microphone" aria-hidden="true"></i>
         </div>
       </div>
     </div>

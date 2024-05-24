@@ -378,8 +378,6 @@ body {
 
   width: 60%;
 
-  background-color: #D4F9BBff;
-
   border-radius: 20px;
 }
 .content-7 p {
@@ -407,5 +405,5 @@ body {
   padding-right: 10px;
 }
 .bg-receved{
-  background-color: #FFFFFFff;
+  background-color: #D4F9BBff;
 }
