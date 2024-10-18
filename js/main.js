@@ -167,7 +167,8 @@ createApp({
                 }
             ],
         },
-      ]
+      ],
+      elementoDaAggiungere: '',
     };
   },
   mounted() {
@@ -194,7 +195,7 @@ createApp({
             this.currentContact.messages.push({
                 date: new Date().toLocaleString('it-IT'),
                 message: this.elementoDaAggiungere,
-                status: 'sent'
+                status: 'received'
             })
             this.elementoDaAggiungere = " ";
             setTimeout(()=>{
@@ -202,10 +203,10 @@ createApp({
                 this.currentContact.messages.push({
                     date: new Date().toLocaleString('it-IT'),
                     message: 'ok',
-                    status: 'received'
+                    status: 'sent'
                 })
             }, 1000)
         }
-    }
+    },
   }
 }).mount("#app");

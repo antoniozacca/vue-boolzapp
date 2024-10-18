@@ -78,10 +78,10 @@
       </div>
       <div class="right-messages-container">
         <div class="right-messages">
-          <div v-for="(message, index) in currentContact.messages" :key="index" :class="message.status === 'received' ? 'bg-received content-7 card-left' : 'bg-invio content-8 right'">
-            <div class="content-7">
+          <div v-for="(message, index) in currentContact.messages" :key="index" :class="message.status === 'received' ? 'bg-receved content-7 card-left' : 'bg-invio content-8 right'">
+            <div class="wrapper">
               <p :class="{'bg-receved': message.status === 'received'}">{{ message.message }}</p>
-              <span>{{ formatDate(message.date) }}</span>
+              <span class="date">{{ formatDate(message.date) }}</span>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@
         </div>
         <input v-model="elementoDaAggiungere" class="new-message-inputs" placeholder="Scrivi un messaggio" />
         <div class="right-footer-icon f-right">
-          <i @click="addMessage" class="fa fa-microphone" aria-hidden="true"></i>
+          <i @click="addMessage"  class="fa fa-microphone" aria-hidden="true"></i>
         </div>
       </div>
     </div>

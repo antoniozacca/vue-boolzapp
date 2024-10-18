@@ -374,24 +374,35 @@ body {
 }
 
 .content-7 {
-  height: 30%;
-
+  height: auto;
+  margin-left: auto;
   width: 60%;
 
   border-radius: 20px;
 }
+.content-7 .wrapper {
+  width: 100%;
+}
 .content-7 p {
   padding: 20px;
 }
+
+.content-7 .date {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
 .message span {
   color: #C6DDBBff;
 }
 .card-right {
   margin-top: 10px;
-  justify-content: flex-end;
 }
 .content-8 {
-  height: 30%;
+  height: auto;
   width: 60%;
   border-radius: 20px;
 }
@@ -403,15 +414,22 @@ body {
   justify-content: flex-end;
   font-size: 14px;
   padding-right: 10px;
+  margin-bottom: 5px;
 }
 .bg-receved{
   background-color: #D4F9BBff;
+  margin-bottom: 5px;
+  border-radius: 20px;
 }
 .bg-invio{
   background-color: white;
+  margin-bottom: 5px;
 }
 .message{
   margin-top: 30px;
    margin-left: 10px;
    margin-right: 10px;
+}
+.date{
+  color: rgb(163, 158, 158);
 }
